@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.controlsangre.sangre.BuscarPersona">
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/lvlitems"
+        android:layout_below="@+id/ll" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="   Matricula"
+            android:id="@+id/mat_txt"
+            android:layout_marginRight="15dp"/>
+
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Dia"
+            android:id="@+id/dia_txt"
+            android:layout_alignTop="@+id/mat_txt"
+            android:layout_toRightOf="@+id/mat_txt"
+            android:layout_toEndOf="@+id/mat_txt"
+            android:layout_marginRight="15dp"
+            />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Mes"
+            android:id="@+id/mes_txt"
+            android:layout_alignTop="@+id/dia_txt"
+            android:layout_toRightOf="@+id/dia_txt"
+            android:layout_toEndOf="@+id/dia_txt"
+            android:layout_marginRight="15dp"/>
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="  Any"
+            android:id="@+id/any_txt"
+            android:layout_alignTop="@+id/mes_txt"
+            android:layout_toRightOf="@+id/mes_txt"
+            android:layout_toEndOf="@+id/mes_txt"
+            android:layout_marginRight="15dp"/>
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Hora"
+            android:id="@+id/hora_txt"
+            android:layout_alignTop="@+id/any_txt"
+            android:layout_toRightOf="@+id/any_txt"
+            android:layout_toEndOf="@+id/any_txt"
+            android:layout_marginRight="15dp"/>
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Minut"
+            android:id="@+id/minut_txt"
+            android:layout_alignTop="@+id/hora_txt"
+            android:layout_toRightOf="@+id/hora_txt"
+            android:layout_toEndOf="@+id/hora_txt"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

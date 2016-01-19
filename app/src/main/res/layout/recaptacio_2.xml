@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/rl_inout"
+    android:background="#6495ed">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recaptació entre dates: "
+        android:id="@+id/rec_title"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15sp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dia:"
+        android:id="@+id/dia"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="30sp"
+        android:layout_below="@+id/rec_title"
+        android:layout_alignStart="@+id/rec_title"
+        />
+
+    <EditText
+        android:layout_width="50sp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/dia_text"
+        android:textColor="@color/white"
+        android:layout_marginTop="30sp"
+        android:layout_below="@+id/rec_title"
+        android:layout_toEndOf="@+id/dia" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mes:"
+        android:id="@+id/mes"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="30sp"
+        android:layout_below="@+id/rec_title"
+        android:layout_toEndOf="@+id/dia_text"
+        android:layout_marginLeft="10dp"
+        />
+    <EditText
+        android:layout_width="50sp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/mes_text"
+        android:textColor="@color/white"
+        android:layout_alignTop="@+id/mes"
+        android:layout_toEndOf="@+id/mes" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Any:"
+        android:id="@+id/any"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_toEndOf="@+id/mes_text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30sp"
+        android:layout_below="@+id/rec_title"/>
+
+    <EditText
+        android:layout_width="50sp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/any_text"
+        android:layout_below="@+id/mat_text"
+        android:textColor="@color/white"
+        android:layout_alignTop="@+id/any"
+        android:layout_toEndOf="@+id/any"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora:"
+        android:id="@+id/hora"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_alignStart="@+id/rec_title"
+        android:layout_marginTop="20sp"
+        android:layout_below="@+id/dia_text"/>
+
+    <EditText
+        android:layout_width="50sp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/hora_text"
+        android:textColor="@color/white"
+        android:layout_alignTop="@+id/hora"
+        android:layout_toEndOf="@+id/hora" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dia:"
+        android:id="@+id/dia2"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="30sp"
+        android:layout_below="@+id/hora"
+        android:layout_alignStart="@+id/rec_title"
+        />
+
+    <EditText
+        android:layout_width="50sp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/dia_text2"
+        android:textColor="@color/white"
+        android:layout_marginTop="30sp"
+        android:layout_below="@+id/hora"
+        android:layout_toEndOf="@+id/dia2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mes:"
+        android:id="@+id/mes2"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="30sp"
+        android:layout_below="@+id/hora"
+        android:layout_toEndOf="@+id/dia_text2"
+        android:layout_marginLeft="10dp"
+        />
+    <EditText
+        android:layout_width="50sp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/mes_text2"
+        android:textColor="@color/white"
+        android:layout_alignTop="@+id/mes2"
+        android:layout_toEndOf="@+id/mes2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Any:"
+        android:id="@+id/any2"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_toEndOf="@+id/mes_text2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30sp"
+        android:layout_below="@+id/hora"/>
+
+    <EditText
+        android:layout_width="50sp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/any_text2"
+        android:layout_below="@+id/mat_text"
+        android:textColor="@color/white"
+        android:layout_alignTop="@+id/any2"
+        android:layout_toEndOf="@+id/any2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora:"
+        android:id="@+id/hora2"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_alignStart="@+id/hora"
+        android:layout_marginTop="20sp"
+        android:layout_below="@+id/dia_text2"/>
+
+    <EditText
+        android:layout_width="50sp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/hora_text2"
+        android:textColor="@color/white"
+        android:layout_alignTop="@+id/hora2"
+        android:layout_toEndOf="@+id/hora2" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Import a pagar:  "
+        android:id="@+id/importt"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_below="@+id/hora_text2"
+        android:layout_alignStart="@+id/dia"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="€"
+        android:id="@+id/importt_text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_alignTop="@+id/importt"
+        android:layout_toEndOf="@+id/importt"
+        android:visibility="visible" />
+
+    <Button
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirm"
+        android:background="@drawable/buttonshape"
+        android:text="Veure recaptació"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:visibility="visible"
+        android:onClick="veureRecaptacionsDates"
+        android:layout_below="@+id/importt"
+        android:layout_alignStart="@+id/list"
+        android:layout_marginTop="10sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list"
+        android:background="@drawable/buttonshape"
+        android:text="Llistar cotxes "
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15sp"
+        android:layout_below="@id/confirm"
+        android:onClick="onListarDates" />
+
+
+</RelativeLayout>

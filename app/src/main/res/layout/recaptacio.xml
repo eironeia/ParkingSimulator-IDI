@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/rl_inout"
+    android:background="#6495ed">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recaptació: "
+        android:id="@+id/rec_title"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15sp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+
+    <Button
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirm"
+        android:background="@drawable/buttonshape"
+        android:text="Recaptació del dia"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:visibility="visible"
+        android:onClick="onDia"
+        android:layout_alignStart="@+id/list"
+        android:layout_marginTop="85dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list"
+        android:background="@drawable/buttonshape"
+        android:text="Recaptació de dates "
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15sp"
+        android:layout_below="@id/confirm"
+        android:onClick="onDates" />
+
+
+</RelativeLayout>

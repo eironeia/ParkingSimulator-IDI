@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/rl_inout"
+    android:background="#6495ed">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrada vehicle"
+        android:id="@+id/c1"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="15sp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:checked="true"
+        android:nestedScrollingEnabled="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sortida vehicle"
+        android:id="@+id/c2"
+        android:layout_marginRight="15sp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_alignTop="@+id/c1"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preu minut: 0.02€"
+        android:id="@+id/preu_minut"
+        android:layout_below="@+id/c1"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Matricula: "
+        android:id="@+id/mat"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/preu_minut"
+        android:layout_alignStart="@+id/c1"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora:"
+        android:id="@+id/hora"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_below="@+id/mat_text"
+        android:layout_alignStart="@+id/mat" />
+
+    <EditText
+        android:layout_width="50sp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/hora_text"
+        android:textColor="@color/white"
+        android:layout_alignTop="@+id/hora"
+        android:layout_toEndOf="@+id/hora" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minut:"
+        android:id="@+id/minut"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_alignTop="@+id/hora_text"
+        android:layout_alignStart="@+id/hora_text"
+        android:layout_marginLeft="70dp"/>
+
+    <EditText
+        android:layout_width="50sp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/minut_text"
+        android:textColor="@color/white"
+        android:layout_alignTop="@+id/minut"
+        android:layout_toEndOf="@+id/minut" />
+
+    <EditText
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/mat_text"
+        android:layout_marginRight="15sp"
+        android:textColor="@color/white"
+        android:layout_alignTop="@+id/mat"
+        android:layout_alignStart="@+id/preu_minut"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dia:"
+        android:id="@+id/dia"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_alignTop="@+id/dia_text"
+        android:layout_alignStart="@+id/mat"
+        />
+
+    <EditText
+        android:layout_width="50sp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/dia_text"
+        android:textColor="@color/white"
+        android:layout_alignTop="@+id/mes"
+        android:layout_toEndOf="@+id/dia" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mes:"
+        android:id="@+id/mes"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_below="@+id/hora_text"
+        android:layout_toEndOf="@+id/dia_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+    <EditText
+        android:layout_width="50sp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/mes_text"
+        android:textColor="@color/white"
+        android:layout_alignTop="@+id/mes"
+        android:layout_toEndOf="@+id/mes" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Any:"
+        android:id="@+id/any"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_below="@+id/hora_text"
+        android:layout_toEndOf="@+id/mes_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:layout_width="50sp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/any_text"
+        android:layout_below="@+id/mat_text"
+        android:textColor="@color/white"
+        android:layout_alignTop="@+id/any"
+        android:layout_toEndOf="@+id/any"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Import a pagar:  "
+        android:id="@+id/importt"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_below="@+id/dia_text"
+        android:layout_alignStart="@+id/dia"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Clica aquí per desfer:  ↺"
+        android:id="@+id/textView"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:onClick="onUndo"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/buidar"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="€"
+        android:id="@+id/importt_text"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_alignTop="@+id/importt"
+        android:layout_toEndOf="@+id/importt"
+        android:visibility="visible" />
+
+    <Button
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirm"
+        android:background="@drawable/buttonshape"
+        android:text="Confirmar Entrada"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/importt"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        android:onClick="agregar_clicked" />
+
+    <Button
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/listCoche"
+        android:background="@drawable/buttonshape"
+        android:text="Llistar Cotxes"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/confirm"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        android:onClick="onListar" />
+
+
+
+
+    <Button
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buidar"
+        android:background="@drawable/buttonshape"
+        android:text="Eliminar tots els cotxes"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/listCoche"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        android:onClick="onDelete" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Places ocupades:"
+        android:id="@+id/places_lliures"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/pll_text"
+        android:layout_marginBottom="25sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15"
+        android:id="@+id/pll_text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_alignTop="@+id/places_lliures"
+        android:layout_alignEnd="@+id/preu_minut"
+        android:layout_marginLeft="15sp"
+        android:visibility="visible" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  / 15"
+        android:id="@+id/places_totals"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        android:layout_alignBaseline="@+id/pll_text"
+        android:layout_toEndOf="@+id/preu_minut" />
+
+
+
+
+</RelativeLayout>

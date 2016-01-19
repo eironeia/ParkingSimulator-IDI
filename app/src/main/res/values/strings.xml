@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EIRONEIA PARKING</string>
+    <string name="action_settings">Ajuda</string>
+    <string name="p_totales">PLACES TOTALS:</string>
+    <string name="p_lliures">PLACES LLIURES:</string>
+    <string name="in_out">Entrada - Sortida</string>
+    <string name="recaptacio">Recaptació</string>
+    <string name="export">Exportar</string>
+
+
+</resources>
